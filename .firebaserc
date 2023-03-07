@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "bang-project-9443b": {
+      "hosting": {
+        "bang-project": [
+          "bang-project-9443b"
+        ]
+      }
+    }
+  }
+}
