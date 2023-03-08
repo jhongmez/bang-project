@@ -1,0 +1,9 @@
+<div class="card" style="width: 18rem;" *ngFor="let product of products$ | async">
+   <img [src]="product.imageProduct" class="card-img-top" alt="...">
+   <div class="card-body">
+      <h5 class="card-title">{{ product.titleProduct }}</h5>
+      <h6>{{ product.nameProduct }}</h6>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <!-- <a href="#" class="btn btn-primary">Go somewhere</a>   -->
+   </div>
+</div>

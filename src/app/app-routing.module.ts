@@ -12,7 +12,7 @@ const routes: Routes = [
 	},
 	{ 
 		path: 'administracion', 
-		loadChildren: () => import('./components/pages/admin/admin.module').then(m => m.AdminModule) 
+		loadChildren: () => import('./components/pages/admin.module').then(m => m.AdminModule) 
 	}
 ];
 
