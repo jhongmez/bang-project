@@ -7,11 +7,11 @@ const routes: Routes = [
 		loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule) 
 	},
 	{ 
-		path: 'login', 
+		path: 'inicio-sesion', 
 		loadChildren: () => import('./components/login/login.module').then(m => m.LoginModule) 
 	},
 	{ 
-		path: 'administracion', 
+		path: 'administration', 
 		loadChildren: () => import('./components/pages/admin.module').then(m => m.AdminModule) 
 	}
 ];
