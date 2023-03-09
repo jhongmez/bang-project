@@ -11,7 +11,8 @@ import { ProductI } from 'src/app/interfaces/product';
 export class ProductsService {
 
 	constructor(private firestore: AngularFirestore) { }
-
+	
+	// * Obtener todos los productos
 	getAllProducts() {
 		return this.firestore.collection('products')
 			.snapshotChanges()
@@ -24,6 +25,11 @@ export class ProductsService {
 					})
 				)
 			);
+	}
+	
+	// * Obtener un solo producto
+	getOneProduct(idProduct: ProductI): Observable<ProductI> {
+		return this.firestore.doc<ProductI>(`products/${idProduct}`).valueChanges();
 	}
 
 }
