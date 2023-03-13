@@ -1,1 +1,27 @@
-<p>login works!</p>
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-4 offset-4">
+				<div class="card">
+					<div class="row">
+						<div class="col-4">
+
+						</div>
+						<div class="col-8">
+							<div class="card-body">
+								<h3>Iniciar sesion</h3>
+								<form [formGroup]="formLogin" (ngSubmit)="onLogin()">
+									<input formControlName="email" type="email" class="form-control mb-4">
+									<input formControlName="password" type="password" class="form-control mb-4">
+									<button type="submit" class="btn btn-primary">
+										Ingresar
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
