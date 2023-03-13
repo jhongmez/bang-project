@@ -1,0 +1,44 @@
+$bold:      'Bold';
+$medium:    'Medium';
+$regular:   'Regular';
+$light:     'Light';
+
+.h1 {
+   font-family: $bold;
+   font-size: 3rem;
+   margin: 0;
+}
+
+.h2 {
+   font-family: $bold;
+   font-size: 2.25rem;
+   margin: 0;
+}
+
+.h3 {
+   font-family: $bold;
+   font-size: 2rem;
+   margin: 0;
+}
+.h3-r {
+   font-family: $regular;
+   font-size: 2rem;
+   margin: 0;
+}
+
+.h4 {
+   font-family: $bold;
+   font-size: 1.625rem;
+   margin: 0;
+}
+.h4-r {
+   font-family: $regular;
+   font-size: 1.625rem;
+   margin: 0;
+}
+
+.h5 {
+   font-family: $bold;
+   font-size: 1.25rem;
+   margin: 0;
+}

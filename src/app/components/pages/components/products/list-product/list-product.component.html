@@ -3,7 +3,7 @@
       <div class="row">
          <div class="col-3">
             <div class="card" style="width: 18rem;" *ngFor="let product of products$ | async">
-               <a [routerLink]="['/administracion/products', product.id]">
+               <a [routerLink]="['/administration/products', product.id]">
                   <img [src]="product.imageProduct" class="card-img-top" alt="...">
                   <div class="card-body">
                      <h5 class="card-title">{{ product.titleProduct }}</h5>
